@@ -1,0 +1,13 @@
+query personDetails($id: ID!) {
+    character(id: $id) {
+        id
+        name
+        status
+        gender
+        species
+        image
+        origin {
+            name
+        }
+    }
+}
